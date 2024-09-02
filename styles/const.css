@@ -1,0 +1,26 @@
+:root {
+  --color-white: #ffffff;
+  --color-argent: #bfbfbf;
+  --color-maize: #ffc359;
+  --color-eerie-black: #1b1c1b;
+  --color-black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color-eerie-black);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=const.css.map */
