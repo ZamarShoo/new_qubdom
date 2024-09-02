@@ -1,0 +1,134 @@
+.tech_table {
+  display: flex;
+  justify-content: space-between;
+}
+.tech_table > div {
+  width: 48%;
+}
+@media screen and (max-width: 800px) {
+  .tech_table > div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .tech_table {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.tech_table-col {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media screen and (max-width: 600px) {
+  .tech_table-col {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+.tech_table-col_line {
+  width: 160px;
+  height: 1px;
+  background-color: var(--color-white);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.tech_table-col p {
+  max-width: 228px;
+  width: 100%;
+  margin-right: 5px;
+  color: var(--color-argent);
+}
+.tech_table-col span {
+  max-width: 222px;
+  width: 100%;
+  color: var(--color-maize);
+}
+.tech_table-left_table {
+  margin-top: 70px;
+}
+@media screen and (max-width: 700px) {
+  .tech_table-left_table {
+    margin-top: 30px;
+  }
+}
+.tech-more {
+  position: relative;
+  display: inline-block;
+  font-weight: 500px;
+  color: var(--color-maize);
+  margin-top: 25px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .tech-more {
+    margin-top: 15px;
+  }
+}
+.tech-more::after {
+  content: "";
+  top: 4.5px;
+  right: -26px;
+  position: absolute;
+  background-image: url("https://qubdom.ru/wp-content/uploads/2024/09/arrow_gold.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 9px;
+  background-size: 100%;
+}
+.tech .swiper {
+  max-width: 650px;
+}
+.tech_table-right-image {
+  position: relative;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.tech_table-right-image::before {
+  content: "";
+  display: block;
+  padding-top: 88%;
+}
+.tech_table-right {
+  position: relative;
+  height: -moz-max-content;
+  height: max-content;
+}
+.tech_table-right-button-next, .tech_table-right-button-prev {
+  position: absolute;
+  bottom: 50%;
+  z-index: 10;
+  width: 45px;
+  height: 70px;
+  margin-bottom: -35px;
+  background-image: url("https://qubdom.ru/wp-content/uploads/2024/09/arrow_slider.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+  .tech_table-right-button-next, .tech_table-right-button-prev {
+    width: 35px;
+  }
+}
+.tech_table-right-button-next {
+  right: -60px;
+}
+@media screen and (max-width: 1400px) {
+  .tech_table-right-button-next {
+    right: -25px;
+  }
+}
+.tech_table-right-button-prev {
+  left: -60px;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 1400px) {
+  .tech_table-right-button-prev {
+    left: -25px;
+  }
+}/*# sourceMappingURL=tech.css.map */

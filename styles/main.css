@@ -25,6 +25,28 @@ body {
   scroll-behavior: smooth;
 }
 
+.section-wrapper {
+  padding-top: 220px;
+}
+.section-wrapper h2 {
+  color: var(--color-maize);
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 700px) {
+  .section-wrapper h2 {
+    margin-bottom: 35px;
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section-wrapper {
+    padding-top: 120px;
+  }
+}
+
 .header {
   position: absolute;
   z-index: 2000;
@@ -663,28 +685,6 @@ main {
   background-size: 34px;
 }
 
-.section-wrapper {
-  padding-top: 220px;
-}
-.section-wrapper h2 {
-  color: var(--color-maize);
-  font-size: 32px;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 80px;
-}
-@media screen and (max-width: 700px) {
-  .section-wrapper h2 {
-    margin-bottom: 35px;
-    font-size: 27px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .section-wrapper {
-    padding-top: 120px;
-  }
-}
-
 .tech_table {
   display: flex;
   justify-content: space-between;
@@ -767,7 +767,6 @@ main {
 }
 .tech .swiper {
   max-width: 650px;
-  margin: 0;
 }
 .tech_table-right-image {
   position: relative;
@@ -779,4 +778,159 @@ main {
   content: "";
   display: block;
   padding-top: 88%;
+}
+.tech_table-right {
+  position: relative;
+  height: -moz-max-content;
+  height: max-content;
+}
+.tech_table-right-button-next, .tech_table-right-button-prev {
+  position: absolute;
+  bottom: 50%;
+  z-index: 10;
+  width: 45px;
+  height: 70px;
+  margin-bottom: -35px;
+  background-image: url("https://qubdom.ru/wp-content/uploads/2024/09/arrow_slider.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+  .tech_table-right-button-next, .tech_table-right-button-prev {
+    width: 35px;
+  }
+}
+.tech_table-right-button-next {
+  right: -60px;
+}
+@media screen and (max-width: 1400px) {
+  .tech_table-right-button-next {
+    right: -25px;
+  }
+}
+.tech_table-right-button-prev {
+  left: -60px;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 1400px) {
+  .tech_table-right-button-prev {
+    left: -25px;
+  }
+}
+
+.photo_video section {
+  position: relative;
+}
+.photo_video section::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -74px;
+  width: 149px;
+  height: 149px;
+  background-image: url("https://qubdom.ru/wp-content/themes/qubdom/img/decore-stripes.svg");
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+}
+.photo_video h2 {
+  color: var(--color-argent);
+}
+.photo_video h2 span {
+  cursor: pointer;
+}
+.photo_video h2 span:first-child {
+  position: relative;
+  margin-right: 30px;
+}
+.photo_video h2 span:first-child::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 2px;
+  right: -20px;
+  height: 38px;
+  width: 2px;
+  background-color: var(--color-argent);
+}
+.photo_video h2 span.active {
+  color: var(--color-maize);
+}
+.photo_video-wrapper {
+  position: relative;
+}
+.photo_video-wrapper-photo-swiper {
+  height: 560px;
+}
+@media screen and (max-width: 600px) {
+  .photo_video-wrapper-photo-swiper {
+    height: 280px;
+  }
+}
+.photo_video-wrapper-photo-swiper .swiper-slide {
+  display: block;
+  width: 100%;
+  height: 265px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.photo_video-wrapper-photo-swiper .swiper-slide::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 50%;
+}
+.photo_video-button-next, .photo_video-button-prev {
+  position: absolute;
+  bottom: 50%;
+  z-index: 10;
+  width: 45px;
+  height: 70px;
+  margin-bottom: -35px;
+  background-image: url("https://qubdom.ru/wp-content/uploads/2024/09/arrow_slider.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+  .photo_video-button-next, .photo_video-button-prev {
+    width: 35px;
+  }
+}
+.photo_video-button-next {
+  right: -60px;
+}
+@media screen and (max-width: 1400px) {
+  .photo_video-button-next {
+    right: -25px;
+  }
+}
+.photo_video-button-prev {
+  left: -60px;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 1400px) {
+  .photo_video-button-prev {
+    left: -25px;
+  }
+}
+.photo_video-wrapper-video {
+  height: 560px;
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .photo_video-wrapper-video {
+    height: 280px;
+  }
+}
+.photo_video .photo, .photo_video .video {
+  display: none;
+}
+.photo_video .photo.active, .photo_video .video.active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,142 @@
+.tech {
+  &_table {
+    display: flex;
+    justify-content: space-between;
+
+    & > div {
+      width: 48%;
+
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &_table-col {
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    &_line {
+      width: 160px;
+      height: 1px;
+      background-color: var(--color-white);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 228px;
+      width: 100%;
+      margin-right: 5px;
+      color: var(--color-argent);
+    }
+
+    span {
+      max-width: 222px;
+      width: 100%;
+      color: var(--color-maize);
+    }
+  }
+
+  &_table-left_table {
+    margin-top: 70px;
+
+    @media screen and (max-width: 700px) {
+      margin-top: 30px;
+    }
+  }
+
+  &-more {
+    position: relative;
+    display: inline-block;
+    font-weight: 500px;
+    color: var(--color-maize);
+    margin-top: 25px;
+    cursor: pointer;
+
+    @media screen and (max-width: 600px) {
+      margin-top: 15px;
+    }
+
+    &::after {
+      content: '';
+      top: 4.5px;
+      right: -26px;
+      position: absolute;
+      background-image: url('https://qubdom.ru/wp-content/uploads/2024/09/arrow_gold.svg');
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 9px;
+      background-size: 100%;
+    }
+  }
+
+  .swiper {
+    max-width: 650px;
+  }
+
+  &_table-right-image {
+    position: relative;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 88%;
+    }
+  }
+
+  &_table-right {
+    position: relative;
+    height: max-content;
+  }
+
+  &_table-right-button-next, &_table-right-button-prev {
+    position: absolute;
+    bottom: 50%;
+    z-index: 10;
+    width: 45px;
+    height: 70px;
+    margin-bottom: -35px;
+    background-image: url('https://qubdom.ru/wp-content/uploads/2024/09/arrow_slider.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    @media screen and (max-width: 1400px) {
+      width: 35px;
+    }
+  }
+
+  &_table-right-button-next {
+    right: -60px;
+
+    @media screen and (max-width: 1400px) {
+      right: -25px;
+    }
+  }
+
+  &_table-right-button-prev {
+    left: -60px;
+    transform: rotate(180deg);
+
+    @media screen and (max-width: 1400px) {
+      left: -25px;
+    }
+  }
+}
