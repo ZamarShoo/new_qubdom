@@ -95,3 +95,21 @@ if ($('.complection-wrapper').children()) {
     $('.complection-wrapper').addClass('many');
   }
 }
+
+var sliders = document.querySelectorAll('.about_house-block-images_wrapper'),
+  prevArrow = document.querySelectorAll('.about_house-button-prev'),
+  nextArrow = document.querySelectorAll('.about_house-button-next');
+sliders.forEach((slider, idx) => {
+  let swiper = new Swiper(slider, {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: nextArrow[idx],
+      prevEl: prevArrow[idx],
+    }
+  })
+})
+
+if ($('[data-fancybox="about_house"]')) {
+  Fancybox.bind('[data-fancybox="about_house"]', {});
+}

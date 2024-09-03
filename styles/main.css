@@ -2038,4 +2038,142 @@ main {
   font-size: 14px;
   color: var(--color-raisin-black);
   font-weight: 600;
+}
+
+.about_house {
+  position: relative;
+}
+.about_house section {
+  max-width: 2000px;
+}
+.about_house-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+@media screen and (max-width: 650px) {
+  .about_house-block {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+}
+.about_house-block:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 650px) {
+  .about_house-block:nth-child(odd) {
+    flex-direction: column;
+  }
+}
+.about_house-block:nth-child(odd) .about_house-block-images {
+  margin-right: -25px !important;
+  margin-left: 30px !important;
+}
+@media screen and (max-width: 650px) {
+  .about_house-block:nth-child(odd) .about_house-block-images {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+.about_house-block:last-child {
+  margin-bottom: 0;
+}
+.about_house-block-images {
+  position: relative;
+}
+.about_house-block-images {
+  margin-left: -25px;
+  margin-right: 30px;
+  width: 53vw;
+}
+@media screen and (max-width: 650px) {
+  .about_house-block-images {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 100%;
+  }
+}
+.about_house-block-info {
+  max-width: 610px;
+  margin: 0 auto;
+}
+.about_house-block-info h2, .about_house-block-info h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-maize);
+  margin: 0;
+  padding-bottom: 30px;
+  text-align: initial;
+}
+.about_house-block-info p, .about_house-block-info span, .about_house-block-info li {
+  color: var(--color-argent);
+}
+.about_house-block-info > * {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 650px) {
+  .about_house-block-info {
+    margin-top: 25px;
+  }
+}
+.about_house-button-next, .about_house-button-prev {
+  position: absolute;
+  bottom: 50%;
+  z-index: 10;
+  width: 45px;
+  height: 70px;
+  margin-bottom: -35px;
+  background-image: url("https://qubdom.ru/wp-content/uploads/2024/09/arrow_slider.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+  .about_house-button-next, .about_house-button-prev {
+    width: 35px;
+  }
+}
+.about_house-button-next {
+  right: 20px;
+}
+@media screen and (max-width: 1400px) {
+  .about_house-button-next {
+    right: 10px;
+  }
+}
+.about_house-button-prev {
+  left: 20px;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 1400px) {
+  .about_house-button-prev {
+    left: 10px;
+  }
+}
+.about_house .swiper-slide {
+  display: block;
+  width: 100%;
+  height: 465px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+@media screen and (max-width: 1000px) {
+  .about_house .swiper-slide {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about_house .swiper-slide {
+    height: 250px;
+  }
+}
+.about_house .swiper-slide::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 66%;
 }/*# sourceMappingURL=main.css.map */
