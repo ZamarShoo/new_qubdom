@@ -78,3 +78,20 @@ $('.photo_video h2 span').on('click', function (e) {
 if ($('[data-fancybox="photo_gallery"]')) {
   Fancybox.bind('[data-fancybox="photo_gallery"]', {});
 }
+
+$('.complection_table-body_block-head').on('click', function (e) {
+	e.stopPropagation();
+	const $type = $( this ).parent().toggleClass('open');
+})
+
+if ($('.complection-wrapper').children()) {
+  if ($('.complection-wrapper').children().length === 1) {
+    $('.complection-wrapper').addClass('single');
+    $('.complection-wrapper').removeClass('many');
+  }
+
+  if ($('.complection-wrapper').children().length >= 2) {
+    $('.complection-wrapper').removeClass('single');
+    $('.complection-wrapper').addClass('many');
+  }
+}
