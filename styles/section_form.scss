@@ -1,0 +1,128 @@
+.section-form {
+  padding: 50px 0;
+  background-color: var(--color-raisin-black);
+
+  section {
+    max-width: 1100px;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  .form-left {
+    max-width: 510px;
+    width: 100%;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      margin-bottom: 55px;
+    }
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color-maize);
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: var(--color-white);
+  }
+
+  form {
+    max-width: 390px;
+
+    @media screen and (max-width: 800px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  input {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0 7px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    transition: .3s;
+  }
+
+  input[type=text] {
+    border-bottom: 2px solid rgba($color: #ffffff, $alpha: 0.15);
+    margin-bottom: 20px;
+  }
+
+  input[type=text]::placeholder {
+    color: var(--color-white);
+    opacity: .15;
+  }
+
+  input[type=text]:hover, input[type=text]:active {
+    border-bottom: 2px solid rgba($color: #ffffff, $alpha: 1);
+  }
+
+  input[type=submit] {
+    background-color: var(--color-maize);
+    color: var(--color-eerie-black);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 11px 15px;
+    width: max-content;
+    cursor: pointer;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  label {
+    display: block;
+    position: relative;
+  }
+
+  .submit_wrapper {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 600px) {
+      margin-top: 15px;
+    }
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: baseline;
+    }
+    
+    p {
+      margin-left: 7px;
+      font-size: 11px;
+      color: var(--color-white);
+      opacity: .15;
+
+      @media screen and (max-width: 800px) {
+        max-width: 230px;
+      }
+
+      @media screen and (max-width: 600px) {
+        margin-left: 0;
+        margin-top: 15px;
+      }
+
+      a {
+        color: var(--color-white);
+        text-decoration: underline;
+      }
+    }
+  }
+}

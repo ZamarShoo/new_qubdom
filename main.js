@@ -113,3 +113,21 @@ sliders.forEach((slider, idx) => {
 if ($('[data-fancybox="about_house"]')) {
   Fancybox.bind('[data-fancybox="about_house"]', {});
 }
+
+let steps_swiper = new Swiper('.steps-wrapper', {
+  cssMode: true,
+  spaceBetween: 25,
+  freeMode: true,
+  pagination: {
+    el: ".steps-pagination",
+  },
+  breakpoints: {
+    300: {
+		  slidesPerView: 'auto',
+      speed: 50,
+    },
+    1280: {
+      slidesPerView: 3,
+    },
+  },
+});

@@ -1,0 +1,121 @@
+.steps {
+  section {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -100px;
+      background-image: url('https://qubdom.ru/wp-content/themes/qubdom/img/union.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 229px;
+      height: 229px;
+      pointer-events: none;
+
+      @media screen and (max-width: 1280px) {
+        bottom: 20px;
+        left: -60px;
+      }
+    }
+    @media screen and (max-width: 1280px) {
+      padding: 0;
+    }
+
+    h2 {
+      @media screen and (max-width: 1280px) {
+        padding: 0 25px;
+      }
+    }
+
+    & > .btn-wrapper {
+      position: relative;
+      z-index: 5;
+      display: none;
+
+      @media screen and (max-width: 1280px) {
+        display: block;
+        margin: 40px 25px 0;
+      }
+    }
+  }
+
+  &-pagination {
+    z-index: 5;
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+
+    margin-top: 20px;
+    text-align: center;
+
+    .swiper-pagination-bullet {
+      background: none;
+      border: 1px solid var(--color-maize);
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--color-maize);
+    }
+  }
+
+  .swiper-slide {
+    min-height: 222px;
+    background: var(--color-white);
+    border-radius: 2px;
+    padding: 25px 20px;
+
+    & > div {
+      position: absolute;
+      top: 11px;
+      right: 20px;
+      font-size: 36px;
+      line-height: 1;
+      font-weight: 800;
+      color: var(--color-raisin-black);
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    @media screen and (max-width: 1280px) {
+      min-height: 190px;
+      width: 60vw;
+
+      &:first-child {
+        margin-left: 25px;
+      }
+
+      &:last-child {
+        margin-right: 25px !important;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 80vw;
+    }
+
+    h3 {
+      width: 201px;
+      font-size: 20px;
+      line-height: 24px;
+      color: var(--color-raisin-black);
+      margin-bottom: 11px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 17px;
+      color: var(--color-raisin-black);
+    }
+
+    a {
+      margin-top: 25px;
+
+      @media screen and (max-width: 1280px) {
+        display: none;
+      }
+    }
+  }
+}

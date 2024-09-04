@@ -2,7 +2,7 @@
   position: relative;
 }
 .about_house section {
-  max-width: 2000px;
+  max-width: 1900px;
 }
 .about_house-block {
   display: flex;
@@ -43,7 +43,8 @@
 .about_house-block-images {
   margin-left: -25px;
   margin-right: 30px;
-  width: 53vw;
+  width: 51vw;
+  max-width: 1100px;
 }
 @media screen and (max-width: 650px) {
   .about_house-block-images {
