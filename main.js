@@ -131,3 +131,8 @@ let steps_swiper = new Swiper('.steps-wrapper', {
     },
   },
 });
+
+$('.faq-section-head').on('click', function (e) {
+  e.stopPropagation();
+  $( this ).parent().toggleClass('open');
+})

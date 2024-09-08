@@ -2,6 +2,7 @@
   --color-white: #ffffff;
   --color-cultured: #f6f6f6;
   --color-argent: #bfbfbf;
+  --color-quick-silver: #a6a6a6;
   --color-maize: #ffc359;
   --color-eerie-black: #1b1c1b;
   --color-raisin-black: #252525;
@@ -956,6 +957,7 @@ main {
   --color-white: #ffffff;
   --color-cultured: #f6f6f6;
   --color-argent: #bfbfbf;
+  --color-quick-silver: #a6a6a6;
   --color-maize: #ffc359;
   --color-eerie-black: #1b1c1b;
   --color-raisin-black: #252525;
@@ -2441,4 +2443,374 @@ main {
 .section-form .submit_wrapper p a {
   color: var(--color-white);
   text-decoration: underline;
+}
+
+.faq {
+  position: relative;
+}
+.faq-section {
+  border-bottom: 1px solid rgba(255, 195, 89, 0.6);
+}
+.faq-section-head {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 76px;
+  cursor: pointer;
+}
+.faq-section-head h3 {
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-cultured);
+}
+.faq-section-head i {
+  display: block;
+  position: relative;
+  margin-right: 15px;
+  background-image: url("https://qubdom.ru/wp-content/themes/qubdom/img/faq.svg");
+  background-position: center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.faq-section-head:hover i {
+  background-color: var(--color-maize);
+}
+.faq-section-body {
+  overflow: hidden;
+  font-size: 16px;
+  color: var(--color-argent);
+  height: 0;
+  transition: 0.3s;
+  max-width: 650px;
+}
+.open .faq-section-body {
+  height: auto;
+  padding-bottom: 18px;
+}
+.faq-star {
+  pointer-events: none;
+  position: absolute;
+  background-image: url("https://qubdom.ru/wp-content/themes/qubdom/img/decore-star.svg");
+  background-size: 100%;
+  width: 116px;
+  height: 116px;
+  top: 50%;
+  z-index: -1;
+  right: 1%;
+  transform: rotate(15deg);
+}
+
+.footer {
+  padding: 100px 0 20px;
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    padding: 60px 0;
+  }
+}
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+@media screen and (max-width: 1100px) {
+  .footer_top {
+    flex-direction: column;
+  }
+}
+.footer_top-left a.logo {
+  z-index: 10;
+  display: inline-block;
+  min-width: 103px;
+  width: 103px;
+  height: 30px;
+  background-image: url("https://qubdom.ru/wp-content/uploads/2024/08/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 500px) {
+  .footer_top-left a.logo {
+    width: 100%;
+    background-position: center;
+  }
+}
+.footer_top-left .time_work {
+  margin: 15px 0;
+}
+.footer_top-left .time_work-head {
+  margin-bottom: 3px;
+  color: var(--color-argent) !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+.footer_top-left .time_work li {
+  color: var(--color-quick-silver);
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer_top-left .info {
+  font-size: 13px;
+  color: var(--color-quick-silver);
+}
+.footer_top-left .info p {
+  margin-bottom: 4px;
+}
+.footer_top-left .info p.info-photo {
+  margin-top: 14px;
+  margin-bottom: 0;
+  max-width: 250px;
+  font-size: 11px;
+}
+@media screen and (max-width: 500px) {
+  .footer_top-left .info {
+    display: none;
+  }
+}
+.footer_top-nav {
+  display: flex;
+}
+@media screen and (max-width: 1100px) {
+  .footer_top-nav {
+    flex-wrap: wrap;
+    margin: 45px 0 60px;
+  }
+}
+.footer_top-nav ul {
+  width: 180px;
+  margin-right: 40px;
+}
+@media screen and (max-width: 1100px) {
+  .footer_top-nav ul {
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
+}
+.footer_top-nav ul li {
+  margin-bottom: 7px;
+}
+.footer_top-nav ul li:first-child {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+}
+.footer_top-nav ul li:first-child::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: var(--color-maize);
+}
+.footer_top-nav ul li:first-child a {
+  font-size: 18px;
+}
+.footer_top-nav ul a {
+  color: var(--color-quick-silver);
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer_top-right .social_contact {
+  display: block;
+}
+@media screen and (max-width: 1100px) {
+  .footer_top-right .social_contact {
+    margin: 0 !important;
+  }
+}
+.footer_top-right .social_contact li {
+  position: relative;
+}
+.footer_top-right .social_contact a {
+  color: var(--color-argent);
+}
+.footer_top-right .social_contact a.yandex {
+  display: block;
+  width: 160px;
+  height: 65px;
+  margin: 20px 0 17px auto;
+  background-image: url("https://qubdom.ru/wp-content/uploads/2024/09/yandex.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 1100px) {
+  .footer_top-right .social_contact a.yandex {
+    margin: 20px 0 17px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer_top-right .social_contact a.yandex {
+    margin: 20px auto 17px;
+  }
+}
+.footer_top-right .social_contact-left {
+  margin-right: 0;
+  margin-left: auto;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media screen and (max-width: 1100px) {
+  .footer_top-right .social_contact-left {
+    margin: 0;
+    margin-left: 22px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer_top-right .social_contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+    margin-left: 0px;
+  }
+}
+.footer_top-right .social_contact-left a {
+  font-size: 15px;
+}
+@media screen and (max-width: 1350px) {
+  .footer_top-right .social_contact-left a {
+    font-size: 14px;
+  }
+}
+.footer_top-right .social_contact-left ul, .footer_top-right .social_contact-left li {
+  width: -moz-max-content;
+  width: max-content;
+}
+.footer_top-right .social_contact-left li:first-child::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -23px;
+  display: inline-block;
+  width: 9px;
+  height: 11px;
+  background-image: url("https://qubdom.ru/wp-content/themes/qubdom/img/place.png");
+  background-size: 100%;
+}
+.footer_top-right .social_contact-left li:first-child a {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+.footer_top-right .social_contact-left li:last-child::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -22px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("https://qubdom.ru/wp-content/themes/qubdom/img/icons-email.png");
+  background-size: 100%;
+  opacity: 0.6;
+}
+.footer_top-right .social_contact-right {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1100px) {
+  .footer_top-right .social_contact-right {
+    margin-left: 22px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer_top-right .social_contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+    margin-left: 0px;
+  }
+}
+.footer_top-right .social_contact-right a {
+  font-size: 20px !important;
+}
+.footer_top-right .social_contact-right li::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -20px;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-image: url("https://qubdom.ru/wp-content/themes/qubdom/img/number.png");
+  background-size: 100%;
+}
+.footer_top-right .social_media {
+  display: flex;
+  margin-left: 20px;
+}
+@media screen and (max-width: 1100px) {
+  .footer_top-right .social_media {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer_top-right .social_media {
+    justify-content: center;
+    margin-left: -20px;
+  }
+}
+.footer_top-right .social_media .inst {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 30px;
+  background-image: url("https://qubdom.ru/wp-content/uploads/2024/08/isnt.svg");
+  background-size: contain;
+  background-position: center;
+}
+.footer_top-right .social_media .vk {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://qubdom.ru/wp-content/uploads/2024/08/vk.svg");
+  background-size: contain;
+  background-position: center;
+}
+.footer_bottom a, .footer_bottom p {
+  color: var(--color-quick-silver);
+}
+.footer_bottom p {
+  display: inline-block;
+  margin-right: 50px;
+}
+@media screen and (max-width: 500px) {
+  .footer_bottom p {
+    margin-right: 0;
+    margin-top: 50px;
+  }
+}
+.footer_bottom a {
+  font-size: 11px;
+}
+@media screen and (max-width: 500px) {
+  .footer_bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.footer .mob_info {
+  text-align: center;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 500px) {
+  .footer .mob_info {
+    display: none;
+  }
+}
+.footer .mob_info a, .footer .mob_info p {
+  color: var(--color-quick-silver);
+  font-size: 16px;
+}
+.footer .mob_info .inn {
+  margin: 11px 0 18px;
+}
+.footer .mob_info .info-photo {
+  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */

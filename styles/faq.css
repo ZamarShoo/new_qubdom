@@ -1,0 +1,59 @@
+.faq {
+  position: relative;
+}
+.faq-section {
+  border-bottom: 1px solid rgba(255, 195, 89, 0.6);
+}
+.faq-section-head {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 76px;
+  cursor: pointer;
+}
+.faq-section-head h3 {
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-cultured);
+}
+.faq-section-head i {
+  display: block;
+  position: relative;
+  margin-right: 15px;
+  background-image: url("https://qubdom.ru/wp-content/themes/qubdom/img/faq.svg");
+  background-position: center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.faq-section-head:hover i {
+  background-color: var(--color-maize);
+}
+.faq-section-body {
+  overflow: hidden;
+  font-size: 16px;
+  color: var(--color-argent);
+  height: 0;
+  transition: 0.3s;
+  max-width: 650px;
+}
+.open .faq-section-body {
+  height: auto;
+  padding-bottom: 18px;
+}
+.faq-star {
+  pointer-events: none;
+  position: absolute;
+  background-image: url("https://qubdom.ru/wp-content/themes/qubdom/img/decore-star.svg");
+  background-size: 100%;
+  width: 116px;
+  height: 116px;
+  top: 50%;
+  z-index: -1;
+  right: 1%;
+  transform: rotate(15deg);
+}/*# sourceMappingURL=faq.css.map */
